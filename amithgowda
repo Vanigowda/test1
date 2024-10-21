@@ -1,0 +1,18 @@
+#!/bin/bash
+
+num=$1
+pallen=$num
+sum=0
+while [ $num -ne 0 ]
+do
+        rem=`expr $num % 10`
+        sum=`expr $sum \* 10 + $rem`
+        num=`expr $num / 10`
+
+done
+if [ "$sum" -eq "$pallen" ]
+then
+        echo " given number is pallindrome "
+else
+        echo " give number not pallindrome"
+fi
