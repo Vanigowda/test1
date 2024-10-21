@@ -12,7 +12,7 @@ do
 done
 if [ "$sum" -eq "$pallen" ]
 then
-        echo " given number is pallindrome "
+        echo " $pallen  given number is pallindrome "
 else
-        echo " give number not pallindrome"
+        echo "$pallen  give number not pallindrome"
 fi
